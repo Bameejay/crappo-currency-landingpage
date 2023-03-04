@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>crypto currency | landing page</title>
+  </head>
+
+  <body class="font-body">
+    <div class="bg-PrimaryBg h-full w-full">
+      <!-- NAVBAR -->
+      <header class="relative container mx-auto pt-6 px-10">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <a href="#"
+              ><img
+                src="/public/img/Logo.png"
+                alt="crappo-logo"
+                class="cursor-pointer"
+            /></a>
+          </div>
+
+          <!-- Menu Items-->
+          <div class="hidden md:flex justify-between space-x-16">
+            <nav class="flex items-center space-x-6 text-white">
+              <ul class="hidden md:flex items-center space-x-6">
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all border-b-2 border-transparent hover:border-blue-500 hover:border-spacing-y-10"
+                    >Products</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all border-b-2 border-transparent hover:border-blue-500 hover:border-spacing-y-10"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all border-b-2 border-transparent hover:border-blue-500 hover:border-spacing-y-10"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="transition-all border-b-2 border-transparent hover:border-blue-500 hover:border-spacing-y-10"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- Login -->
+            <div class="flex items-center">
+              <a href="#" class="text-white capitalize">Login</a>
+              <span class="mx-6 text-white/20"> | </span>
+              <!-- Button -->
+              <a
+                a
+                href="#"
+                class="hidden py-2 px-7 text-white bg-brightBlue rounded-full baseline md:block bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100"
+                >Register</a
+              >
+            </div>
+          </div>
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center justify-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center w-full right-0 left-0 top-10 drop-shadow-md"
+          >
+            <!-- <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"> -->
+            <div class="flex flex-col gap-6">
+              <a href="#" class="hover:border-blue-500">Products</a>
+              <a href="#" class="hover:border-blue-500">Features</a>
+              <a href="#" class="hover:border-blue-500">About</a>
+              <a href="#" class="hover:border-blue-500">Contact</a>
+            </div>
+            <!-- Login -->
+            <div class="flex flex-row items-center justify-between">
+              <a href="#" class="capitalize">Login</a>
+              <span class="mx-6 text-black/40"> | </span>
+              <!-- Button -->
+              <a
+                a
+                href="#"
+                class="py-2 px-4 bg-brightBlue rounded-full baseline md:block bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 text-white font-semibold"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- END OF NAVBAR SECTION -->
+
+      <!-- HERO SECTION -->
+      <section id="hero">
+        <!-- Flex Container -->
+        <div
+          class="container flex flex-col items-center px-10 mx-auto mt-5 space-y-0 md:flex-row md:space-y-0 md:pt-0"
+        >
+          <!-- Left Item -->
+          <div
+            class="flex flex-col items-center mb-10 md:mb-96 md:mt-20 md:block md:w-1/2"
+          >
+            <div
+              class="flex flex-row justify-between mx-auto rounded-full w-96 bg-gray-600 md:py-1 px-1 mt-20 md:mx-0"
+            >
+              <p
+                class="rounded-full font-semibold bg-white text-xs px-6 text-[8px] flex items-center text-gray-400"
+              >
+                76% SAVE
+              </p>
+              <p class="py-1 text-xs text-white pr-2">
+                For the Black Friday Weekend deals
+              </p>
+            </div>
+
+            <h1
+              class="text-5xl font-bold text-white capitalize w-4/5 pt-8 text-center mx-auto md:text-left md:mx-0"
+              data-aos="zoom-in-up"
+              data-aos-duration="2000"
+            >
+              Fastest & secure platform to invest in crypto
+            </h1>
+            <p
+              class="text-gray-200 opacity-60 mt-2 tracking-wide text-center text-1xl md:text-left"
+              data-aos="zoom-in-up"
+              data-aos-duration="2000"
+            >
+              buy and sell cyptocurrencies by trusted 10M wallets, in over 100m
+              transactions
+            </p>
+            <!-- Button -->
+            <div
+              class="py-2 mt-4 rounded-full bg-PrimaryBtn w-40 px-auto flex items-center relative cursor-pointer"
+              data-aos="zoom-in"
+              data-aos-offset="100"
+              data-aos-duration="2000"
+            >
+              <button class="text-sm capitalize text-white absolute left-4">
+                Try for FREE
+              </button>
+              <img
+                src="/public/img/arrow.png"
+                alt="arrow"
+                class="ml-32 w-6"
+                data-aos="zoom-in-right"
+                data-aos-duration="2000"
+              />
+            </div>
+          </div>
+          <!-- Hero Image / Right Item -->
+          <div
+            class="mx-auto md:pr-40 md:pb-40 md:w-1/2"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+            data-aos-duration="2000"
+          >
+            <img src="/public/img/hero-img.png" alt="hero-img" />
+          </div>
+        </div>
+      </section>
+      <!-- END OF HERO SESSION -->
+
+      <!-- FEATURES SESSION -->
+      <div
+        class="container flex flex-col justify-between pt-10 space-y-10 md:space-y-0 md:flex-row md:pt-0 md:px-8"
+      >
+        <div
+          class="flex flex-col items-center gap-5 mx-auto md:gap-10 md:flex-row"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <img
+            src="/public/img/digital-currency icon.png"
+            alt="digital-currency"
+            class="w-14"
+          />
+          <div class="space-y-3">
+            <h1 class="font-bold text-2xl text-white text-center md:text-left">
+              $30B
+            </h1>
+            <p class="text-gray-400 text-sm">Digital Currency Exchanged</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center space-y-4 md:gap-10 mx-auto md:flex-row"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <img src="/public/img/trustedw.png" alt="digital-currency" class="w-14" />
+          <div class="space-y-3">
+            <h1 class="font-bold text-2xl text-white text-center md:text-left">
+              $30B
+            </h1>
+            <p class="text-gray-400 text-sm">Trusted Wallets Investor</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:gap-10 mx-auto md:flex-row"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+        >
+          <img
+            src="/public/img/countries-supported icon.png"
+            alt="digital-currency"
+            class="w-14"
+          />
+          <div class="space-y-3">
+            <h1 class="font-bold text-2xl text-white text-center md:text-left">
+              195
+            </h1>
+            <p class="text-gray-400 text-sm">countries Supported</p>
+          </div>
+        </div>
+      </div>
+      <!-- END OF FEATURE SESSION -->
+
+      <!-- LEARN MORE SESSION -->
+      <section id="Learn-more">
+        <div
+          class="container flex flex-col justify-between items-center space-y-14 mx-auto px-10 pb-40 md:flex-row"
+        >
+          <div class="" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="/public/img/ethereum-crappo.png" alt="ethereum-crappo" />
+          </div>
+          <div>
+            <h2
+              class="md:text-5xl text-3xl text-white mx-auto md:mx-0 text-center"
+              data-aos="zoom-in-up"
+              data-aos-duration="2000"
+            >
+              why you should choose CHAPPO
+            </h2>
+          </div>
+        </div>
+
+        <!-- How much you can earn -->
+        <div class="container mx-auto">
+          <h2 class="text-center text-white capitalize tracking-wider">
+            How much can you earn with us
+          </h2>
+          <p class="text-center text-gray-500 text-xs py-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            soluta nostrum qui totam ipsam aliquid?
+          </p>
+
+          <div
+            class="relative rounded-2xl w-full mx-auto p-6 bg-white max-w-[942px] drop-shadow md:p-12"
+          >
+            <form
+              class="flex flex-col md:flex-row md:justify-between md:items-center space-y-12 md:space-y-0"
+            >
+              <input
+                class="input placeholder:text-darkblue border-b-2 w-80 outline-none py-1 text-xl"
+                type="text"
+                placeholder="Enter your hash rate"
+              />
+              <select
+                class="select focus:outline-none text-xl w-72 text-gray-500 py-1 bg-transparent border-0 border-b-2 border-gray-200"
+              >
+                <option value>TH/S</option>
+                <option value>H/S</option>
+                <option value>kH/S</option>
+                <option value>MH/S</option>
+                <option value>GH/S</option>
+              </select>
+              <button
+                class="hidden py-2 px-7 text-white bg-brightBlue rounded-full baseline md:block bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100"
+              >
+                Calculate
+              </button>
+            </form>
+
+            <div class="mt-10">
+              <div class="text-blue mb-4">ESTIMATED 24 HOUR REVENUE</div>
+              <div class="text-[32px] font-bold mb-3">
+                0.055 130 59 ETH
+                <span class="text-blue-500">($1275)</span>
+              </div>
+              <div class="text-gray-500 font-semibold text-sm tracking-[-1%]">
+                Revenue will change based on mining difficulty and Ethereum
+                price
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF LEARN MORE SESSION -->
+    </div>
+
+    <!-- TRADING SESSION -->
+    <section
+      id="trading"
+      class="pt-[180px] pb-12 w-full md:pt-[220px] bg-gray-50 -mt-32"
+    >
+      <div class="container mx-auto">
+        <h2
+          class="mb-16 font-semibold capitalize text-center"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          trade securely and market the high growth cryptocurrencies
+        </h2>
+
+        <div
+          class="flex flex-col gap-[-45px] px-16 md:flex-row md:space-x-10 mx-auto space-y-8 md:space-y-0"
+        >
+          <!-- First Box -->
+          <div
+            class="rounded-2xl space-y-4 bg-white text-center w-full px-6 py-16 cursor-pointer box selected"
+          >
+            <img src="/public/img/bitcoin-1.png" alt="bitcoin" class="mx-auto" />
+            <h2 class="font-extrabold text-3xl pt-6">
+              Bitcoin<sup class="text-gray-400 font-bold text-lg">BTC</sup>
+            </h2>
+            <p class="font-semibold text-sm px-6 pb-4">
+              Digital currency in which a record of transactions is maintained.
+            </p>
+
+            <button
+              class="arrow-btn border-2 rounded-full px-6 py-6 w-16 border-gray-300 h-16 flex justify-center items-center mx-auto"
+            >
+              <svg
+                width="8"
+                height="18"
+                viewBox="0 0 13 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.99994 21.0002C2.73673 21.0017 2.4758 20.9512 2.23213 20.8517C1.98845 20.7522 1.76682 20.6055 1.57994 20.4202C1.39248 20.2342 1.24369 20.013 1.14216 19.7693C1.04062 19.5256 0.988342 19.2642 0.988342 19.0002C0.988342 18.7361 1.04062 18.4747 1.14216 18.231C1.24369 17.9873 1.39248 17.7661 1.57994 17.5802L8.19994 11.0002L1.83994 4.38017C1.46744 4.00545 1.25835 3.49854 1.25835 2.97017C1.25835 2.4418 1.46744 1.9349 1.83994 1.56017C2.02587 1.37272 2.24707 1.22393 2.49079 1.12239C2.7345 1.02085 2.99592 0.968576 3.25994 0.968576C3.52396 0.968576 3.78537 1.02085 4.02909 1.12239C4.27281 1.22393 4.49401 1.37272 4.67994 1.56017L12.3999 9.56017C12.7664 9.93403 12.9717 10.4367 12.9717 10.9602C12.9717 11.4837 12.7664 11.9863 12.3999 12.3602L4.39994 20.3602C4.22042 20.554 4.00427 20.7104 3.76398 20.8203C3.52368 20.9301 3.264 20.9913 2.99994 21.0002Z"
+                  fill="#3671E9"
+                />
+              </svg>
+            </button>
+            <button
+              class="bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 border-none pl-8 pr-6 gap-x-3 border-2 border-gray-300 rounded-full h-16 mx-auto mining-btn flex justify-center items-center"
+            >
+              <div class="text-sm font-medium text-white">Start mining</div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="text-2xl text-white"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Second Box -->
+          <div
+            class="rounded-2xl space-y-4 bg-white text-center w-full px-6 py-16 cursor-pointer box"
+          >
+            <img src="/public/img/ethereum-1.png" alt="bitcoin" class="mx-auto" />
+            <h2 class="font-extrabold text-3xl pt-6">
+              Ethereum<sup class="text-gray-400 font-bold text-lg">ETH</sup>
+            </h2>
+            <p class="font-semibold text-sm px-6 pb-4">
+              Blockchain technology to create and run decentralized digital
+              applications
+            </p>
+
+            <button
+              class="arrow-btn border-2 rounded-full px-6 py-6 w-16 border-gray-300 h-16 flex justify-center items-center mx-auto"
+            >
+              <svg
+                width="8"
+                height="18"
+                viewBox="0 0 13 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.99994 21.0002C2.73673 21.0017 2.4758 20.9512 2.23213 20.8517C1.98845 20.7522 1.76682 20.6055 1.57994 20.4202C1.39248 20.2342 1.24369 20.013 1.14216 19.7693C1.04062 19.5256 0.988342 19.2642 0.988342 19.0002C0.988342 18.7361 1.04062 18.4747 1.14216 18.231C1.24369 17.9873 1.39248 17.7661 1.57994 17.5802L8.19994 11.0002L1.83994 4.38017C1.46744 4.00545 1.25835 3.49854 1.25835 2.97017C1.25835 2.4418 1.46744 1.9349 1.83994 1.56017C2.02587 1.37272 2.24707 1.22393 2.49079 1.12239C2.7345 1.02085 2.99592 0.968576 3.25994 0.968576C3.52396 0.968576 3.78537 1.02085 4.02909 1.12239C4.27281 1.22393 4.49401 1.37272 4.67994 1.56017L12.3999 9.56017C12.7664 9.93403 12.9717 10.4367 12.9717 10.9602C12.9717 11.4837 12.7664 11.9863 12.3999 12.3602L4.39994 20.3602C4.22042 20.554 4.00427 20.7104 3.76398 20.8203C3.52368 20.9301 3.264 20.9913 2.99994 21.0002Z"
+                  fill="#3671E9"
+                />
+              </svg>
+            </button>
+            <button
+              class="bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 border-none pl-8 pr-6 gap-x-3 border-2 border-gray-300 rounded-full h-16 flex justify-center items-center mx-auto mining-btn"
+            >
+              <div class="text-sm font-medium text-white">Start mining</div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="text-2xl text-white"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Third Box -->
+          <div
+            class="rounded-2xl space-y-4 bg-white text-center w-full px-6 py-16 cursor-pointer box"
+          >
+            <img src="/public/img/litecoin-1.png" alt="bitcoin" class="mx-auto" />
+            <h2 class="font-extrabold text-3xl pt-6">
+              Litecoin<sup class="text-gray-400 font-bold text-lg">LTC</sup>
+            </h2>
+            <p class="font-semibold text-sm px-6 pb-4">
+              Cyptocurrency that enables instant payments to anyone in the
+              world.
+            </p>
+
+            <button
+              class="arrow-btn border-2 rounded-full px-6 py-6 w-16 border-gray-300 h-16 flex justify-center items-center mx-auto"
+            >
+              <svg
+                width="8"
+                height="18"
+                viewBox="0 0 13 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.99994 21.0002C2.73673 21.0017 2.4758 20.9512 2.23213 20.8517C1.98845 20.7522 1.76682 20.6055 1.57994 20.4202C1.39248 20.2342 1.24369 20.013 1.14216 19.7693C1.04062 19.5256 0.988342 19.2642 0.988342 19.0002C0.988342 18.7361 1.04062 18.4747 1.14216 18.231C1.24369 17.9873 1.39248 17.7661 1.57994 17.5802L8.19994 11.0002L1.83994 4.38017C1.46744 4.00545 1.25835 3.49854 1.25835 2.97017C1.25835 2.4418 1.46744 1.9349 1.83994 1.56017C2.02587 1.37272 2.24707 1.22393 2.49079 1.12239C2.7345 1.02085 2.99592 0.968576 3.25994 0.968576C3.52396 0.968576 3.78537 1.02085 4.02909 1.12239C4.27281 1.22393 4.49401 1.37272 4.67994 1.56017L12.3999 9.56017C12.7664 9.93403 12.9717 10.4367 12.9717 10.9602C12.9717 11.4837 12.7664 11.9863 12.3999 12.3602L4.39994 20.3602C4.22042 20.554 4.00427 20.7104 3.76398 20.8203C3.52368 20.9301 3.264 20.9913 2.99994 21.0002Z"
+                  fill="#3671E9"
+                />
+              </svg>
+            </button>
+            <button
+              class="bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 border-none pl-8 pr-6 gap-x-3 border-2 border-gray-300 rounded-full h-16 flex justify-center items-center mx-auto mining-btn"
+            >
+              <div class="text-sm font-medium text-white">Start mining</div>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="text-2xl text-white"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invest Smart -->
+
+    <div class="bg-PrimaryBg pb-32">
+      <section id="invest-smart">
+        <div class="container mx-auto pb-10 px-14">
+          <h2
+            class="text-3xl text-white capitalize pt-10 pb-14 text-center px-6"
+          >
+            Market sentiments, portolio, and run the infastructure of your
+            choice
+          </h2>
+          <div class="flex flex-col md:gap-80 gap-y-20 md:flex-row mt-10">
+            <div class="flex flex-col space-y-4">
+              <h3 class="text-white font-semibold text-2xl">Invest Smart</h3>
+              <p class="text-gray-400 text-xs">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+                quae eveniet totam cumque ea pariatur.
+              </p>
+              <div class="py-0">
+                <button
+                  class="text-xs text-white px-7 py-2 bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 rounded-full"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
+                  learn more
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/public/img/invest smart.png"
+                alt="invest-smart"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+
+      <div id="statistics">
+        <div class="container mx-auto px-10 pt-10 pb-32">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-10"
+          >
+            <div>
+              <img src="/public/img/statistics image.png" alt="statistic-image" />
+            </div>
+            <div class="flex flex-col md:space-y-6">
+              <h3 class="capitalize text-white font-bold text-2xl">
+                Detailed statistics
+              </h3>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                tenetur ea doloremque, voluptatum
+              </p>
+              <button
+                class="text-xs text-white px-7 py-2 bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 rounded-full flex justify-start w-32"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Investment table -->
+
+      <div id="Investment">
+        <div class="container mx-auto px-10 pt-10 pb-32">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-10"
+          >
+            <!-- Detailed Statistics -->
+            <div class="flex flex-col md:space-y-6">
+              <h3 class="capitalize text-white font-bold text-2xl">
+                Grow your profit and track your investments
+              </h3>
+              <p class="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                tenetur ea doloremque
+              </p>
+              <button
+                class="text-xs text-white px-7 py-2 bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 rounded-full flex justify-start w-32"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                learn more
+              </button>
+            </div>
+            <!-- Invest table -->
+            <div>
+              <img src="/public/img/investment table.png" alt="statistic-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start mining now -->
+      <div class="container mx-auto px-14 start-mining">
+        <div
+          class="flex flex-col items-center justify-between py-20 md:px-10 md:flex-row space-y-10 md:space-y-0 md:h-[216px] bg-PrimaryBtn rounded-2xl"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          <!-- Right side -->
+          <div class="flex flex-1 flex-col md:space-y-0 md:pl-14 px-6">
+            <h3 class="text-2xl mb-5 font-semibold text-white capitalize">
+              Start Mining Now
+            </h3>
+            <p class="text-white text-xs md:w-[500px]">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+              magni tempore architecto inventore facilis corrupti nulla qui.
+              Asperiores, adipisci eos.
+            </p>
+          </div>
+          <!-- Left side -->
+          <form
+            action=""
+            class="flex flex-col flex-1 md:flex-row w-full items-center gap-y-4 gap-x-6"
+          >
+            <input
+              type="text"
+              class="border border-white-600 border-r-0 border-l-0 border-t-0 bg-PrimaryBtn outline-none md:w-[400px] w-80 text-white placeholder:text-white placeholder:text-base"
+              placeholder="enter message"
+            />
+            <button class="bg-white rounded-2xl px-4 p-2 capitalize">
+              subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <section class="footer">
+        <div class="pt-8 md:pt-14">
+          <!-- Main container -->
+          <div class="container mx-auto px-14">
+            <div class="flex flex-col gap-12 md:flex-row text-white">
+              <!-- First column -->
+              <div class="flex-1 mx-auto md:mx-0 mb-6 max-w-[285px]">
+                <a href="#"
+                  ><img src="/public/img/Logo.png" alt="footer-logo"
+                /></a>
+              </div>
+              <!-- Second column -->
+              <div class="flex flex-1 flex-col gap-16 md:flex-row">
+                <div class="text-center w-full md:text-left">
+                  <div class="text-xl font-medium mb-6">Quick Links</div>
+                  <ul class="space-y-4 text-gray-300">
+                    <li><a href="" class="hover:text-PrimaryBtn">Home</a></li>
+                    <li>
+                      <a href="" class="hover:text-PrimaryBtn">Products</a>
+                    </li>
+                    <li><a href="" class="hover:text-PrimaryBtn">About</a></li>
+                    <li>
+                      <a href="" class="hover:text-PrimaryBtn">Features</a>
+                    </li>
+                    <li>
+                      <a href="" class="hover:text-PrimaryBtn">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Third column -->
+              <div class="flex flex-1 flex-col gap-16 md:flex-row">
+                <div class="text-center w-full md:text-left">
+                  <div class="text-xl font-medium mb-6">Quick Links</div>
+                  <ul class="space-y-4 text-gray-300">
+                    <li><a href="">Download Whitepaper</a></li>
+                    <li><a href="">Smart Token</a></li>
+                    <li><a href="">Blockchain Explore</a></li>
+                    <li><a href="">Cryto API</a></li>
+                    <li><a href="">Interest</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Forth column -->
+              <div class="flex flex-1 flex-col md:text-left gap-y-10">
+                <div class="text-sm font-medium text-left tracking-wide">
+                  We accept following payment systems
+                </div>
+                <div class="flex md:flex-row text-center gap-x-4">
+                  <img
+                    src="/public/img/visa-logo.png"
+                    alt="visa"
+                    class="w-32 h-16"
+                  />
+                  <img
+                    src="/public/img/master-logo.png"
+                    alt="mastercard-logo"
+                    class="w-32 h-16"
+                  />
+                  <img
+                    src="/public/img/btc-logo.png"
+                    alt="bitcoin-logo"
+                    class="w-32 h-16"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- copyright -->
+
+            <div
+              class="flex flex-col items-center md:flex-row justify-between pt-10 gap-y-6"
+            >
+              <div class="text-gray-200 flex-1 flex">
+                &copy; 2021 CRAPPO.All rights reserved
+              </div>
+              <div class="flex flex-1 flex-row gap-x-6 justify-end">
+                <a
+                  href=""
+                  class="w-6 h-6 transition ease-out delay-150 hover:text-PrimaryBtn"
+                  ><img
+                    src="/public/img/facebook-f 1.png"
+                    alt="facebook"
+                    class="hover:text-PrimaryBtn"
+                /></a>
+                <a href="" class="w-6 h-6 transition"
+                  ><img src="/public/img/instagram 1.png" alt="instagram"
+                /></a>
+                <a href="" class="w-6 h-6 transition"
+                  ><img src="/public/img/youtube 1.png" alt="youtube"
+                /></a>
+                <a href="" class="w-6 h-6 transition"
+                  ><img src="/public/img/twitter 1.png" alt="twitter"
+                /></a>
+                <a href="" class="w-6 h-6 transition"
+                  ><img src="/public/img/linkedin 1.png" alt="linkedIn"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
