@@ -2,6 +2,20 @@ const cards = document.querySelectorAll('.box')
 // const btn = document.getElementById('menu-btn')
 // const nav = document.getElementById('menu')
 let ham = document.getElementById('hammm')
+const openHamburger = document.getElementById('#open-hamburger')
+
+// window.onscroll( ()=> {
+//     openHamburger.style.display = "none"
+// })
+
+window.onscroll = function () {
+    if (window.pageYOffset > 0) {
+        openHamburger.style.display = "none"
+    } else {
+        openHamburger.style.display = "block"
+    }
+}
+
 
 
 
