@@ -12,7 +12,7 @@
 
   <body class="font-body">
 
-      <!-- Start of Hamburger Menu -->
+      <!-- Start of Hamburger Menu for Mobile Screen -->
 
           <div
             class="fixed bg-[#252540] w-0 h-[100vh] text-white flex flex-col justify-center items-center text-[40px] tracking-[1px] overflow-hidden origin-top-right duration-500 z-30" id="hammm">
@@ -34,9 +34,10 @@
                 class="py-2 px-4 rounded-full md:block bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100 text-white font-semibold"
                 >Register</a
               >
-              
             </div>
-            <!-- Close Menu -->
+
+            <!-- Close Mobile Menu -->
+
               <div class="absolute top-[20px] right-[10px] text-[30px] cursor-pointer">
                 <ion-icon name="close" onclick="Close(this)" class="mr-10 text-center self-center mt-3"></ion-icon>
               </div>
@@ -44,17 +45,18 @@
 
             <!-- End of Hamburger Menu -->
 
+    <!-- Main Page -->
 
     <div class="main-page">
     <div class="bg-PrimaryBg h-full w-full">
-      
+    
       <!-- NAVBAR -->
       <header class="relative container mx-auto pt-6 px-10">
         
         <!-- Flex container -->
         <div class="flex items-center justify-between">
           
-          <!-- Logo -->
+          <!-- Logo and Open Hamburger for Mobile Screen -->
           <div class="pt-2 flex justify-center self-center text-center">
             <a href="#"
               ><img
@@ -62,14 +64,15 @@
                 alt="crappo-logo"
                 class="cursor-pointer"
             /></a>
+
+            <!-- Open Desktop Menu -->
+
             <div class="absolute top-[20px] right-[10px] text-[30px] cursor-pointer text-white md:hidden" >
               <ion-icon name="menu" onclick="Open(this)" class="mr-10 text-center self-center mt-3 float-right" id="open-hamburger"></ion-icon>
             </div>
           </div>
-          <!-- End of Logo -->
+          <!-- End of Logo and Open Hamburger for Mobile Screen -->
 
-          <!-- Open Hamburger -->
-          
           <!-- Menu Items-->
           <div class="hidden md:flex justify-between space-x-16">
             <nav class="flex items-center space-x-6 text-white">
@@ -81,12 +84,11 @@
                     >Products</a
                   >
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    class="transition-all border-b-2 border-transparent hover:border-blue-500 hover:border-spacing-y-10"
-                    >Features</a
-                  >
+                <li> <a
+                  href="#"
+                  class="transition-all border-b-2 border-transparent hover:border-blue-500 hover:border-spacing-y-10"
+                  >Features</a
+                >
                 </li>
                 <li>
                   <a
@@ -106,40 +108,21 @@
             </nav>
             <!-- Login -->
             <div class="flex items-center">
-              <a href="#" class="text-white capitalize">Login</a>
-              <span class="mx-6 text-white/20"> | </span>
-              <!-- Button -->
-              <a
-                a
-                href="#"
-                class="hidden py-2 px-7 text-white bg-brightBlue rounded-full baseline md:block bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100"
-                >Register</a
-              >
+                <a href="#" class="text-white capitalize">Login</a>
+                <span class="mx-6 text-white/20"> | </span>
+                <!-- Button -->
+                <a
+                  a
+                  href="#"
+                  class="hidden py-2 px-7 text-white bg-brightBlue rounded-full baseline md:block bg-PrimaryBtn hover:bg-hoverPrimaryBtn-100"
+                  >Register</a
+                >
+              </div>
             </div>
-            
           </div>
-          <!-- <div class="absolute top-[20px] right-[10px] text-[40px] cursor-pointer md:hidden">
-            <ion-icon name="close" onclick="Close(this)"></ion-icon>
-        </div> -->
-          </div>
-
-
-          <!-- Hamburger Icon -->
-          <!-- <button
-            id="menu-btn"
-            class="block hamburger md:hidden focus:outline-none"
-          >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button> -->
-        <!-- </div> -->
-
-
-          
-        <!-- </div> -->
       </header>
       <!-- END OF NAVBAR SECTION -->
+
 
       <!-- HERO SECTION -->
       <section id="hero">
