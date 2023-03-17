@@ -1398,13 +1398,6 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 640px){
-  .sm\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media (min-width: 768px){
   .md\:mx-0{
     margin-left: 0px;
